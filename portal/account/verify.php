@@ -103,7 +103,7 @@ if ($GLOBALS['language_menu_login']) {
 <body class="mt-4 skin-blue">
     <div class="container-lg">
         <h1 class="text-center"><?php echo xlt('Account Registration'); ?></h1>
-        <div class="stepwiz">
+        <!-- <div class="stepwiz">
             <div class="stepwiz-row setup-panel">
                 <div class="stepwiz-step">
                     <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
@@ -122,7 +122,7 @@ if ($GLOBALS['language_menu_login']) {
                     <p><?php echo xlt('Register') ?></p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- // Start Forms // -->
         <form id="startForm" role="form" action="account.php?action=verify_email" method="post">
             <input type='hidden' name='csrf_token_form' value='<?php echo attr(CsrfUtils::collectCsrfToken('verifyEmailCsrf')); ?>' />
